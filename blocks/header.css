@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding-top: 34px;
 }
 
@@ -10,14 +11,18 @@
   flex-direction: column;
   align-items: center;
   gap: 22px;
+  width: 255px;
+  max-width: calc(100% - 32px);
 }
 
 .header__logo-icon {
+  display: block;
   width: 32px;
   height: 32px;
 }
 
 .header__logo-text {
-  width: 254px;
+  display: block;
+  width: 100%;
   height: auto;
 }
