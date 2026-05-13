@@ -1,0 +1,137 @@
+.place {
+  display: grid;
+  grid-template-columns: 460px 484px;
+  grid-template-areas:
+    "title website"
+    "media paragraphs";
+  column-gap: 40px;
+  row-gap: 48px;
+  margin: 0 0 80px;
+  align-items: start;
+}
+
+.place:last-child {
+  margin-bottom: 0;
+}
+
+.place__title {
+  grid-area: title;
+  margin: 0;
+  font-size: 72px;
+  line-height: 1.06;
+  font-weight: 900;
+}
+
+.place__website {
+  grid-area: website;
+  align-self: end;
+}
+
+.place__url-heading {
+  margin: 0 0 8px;
+  color: #aaaaaa;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.place__artist {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.place__media {
+  grid-area: media;
+}
+
+.place__image {
+  width: 100%;
+  display: block;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.place__button {
+  margin-top: 48px;
+}
+
+.place__paragraphs {
+  grid-area: paragraphs;
+}
+
+.place__paragraph {
+  margin: 0 0 25px;
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.63;
+  letter-spacing: 0;
+}
+
+.place__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .place {
+    grid-template-columns: 340px 1fr;
+    column-gap: 28px;
+    row-gap: 48px;
+    margin-bottom: 72px;
+  }
+
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "website"
+      "media"
+      "paragraphs";
+    row-gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .place__title {
+    padding: 0 16px;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .place__website {
+    padding: 0 16px;
+  }
+
+  .place__media {
+    width: 100%;
+  }
+
+  .place__image {
+    box-shadow: none;
+  }
+
+  .place__button {
+    margin: 30px 16px 0;
+  }
+
+  .place__paragraphs {
+    padding: 0 16px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 1.63;
+  }
+}
