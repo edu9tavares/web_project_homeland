@@ -49,7 +49,14 @@
 .place__image {
   width: 100%;
   display: block;
-  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  transition:
+    opacity 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.place__image:hover {
+  opacity: 0.8;
+  box-shadow: 10px 10px 25px 0px #00000080;
 }
 
 .place__button {
@@ -116,10 +123,6 @@
 
   .place__media {
     width: 100%;
-  }
-
-  .place__image {
-    box-shadow: none;
   }
 
   .place__button {
