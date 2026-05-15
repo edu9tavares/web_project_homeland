@@ -105,8 +105,9 @@
     grid-template-areas:
       "title"
       "website"
-      "media"
-      "paragraphs";
+      "image"
+      "paragraphs"
+      "button";
     row-gap: 30px;
     margin-bottom: 50px;
   }
@@ -122,14 +123,20 @@
   }
 
   .place__media {
-    width: 100%;
+    display: contents;
+  }
+
+  .place__image {
+    grid-area: image;
   }
 
   .place__button {
-    margin: 30px 16px 0;
+    grid-area: button;
+    margin: 0 16px;
   }
 
   .place__paragraphs {
+    grid-area: paragraphs;
     padding: 0 16px;
   }
 
